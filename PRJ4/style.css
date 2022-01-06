@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    background-image: linear-gradient(
+-9deg, #9d00ff , #a66aaa);
+}
+
+.container.active #input {
+    width: 240px;
+    padding: 15px;
+}
+
+#input {
+    padding: 0;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+#btn {
+    padding: 12px 17px;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
