@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: steelblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 60px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    padding: 25px 0 40px 0;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.container .form-controll {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container .form-controll input {
+    padding: 10px 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container .form-controll input:focus {
+    border-color: lightblue;
+}
+
+.container .form-controll label {
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.container .form-controll span {
+    display: inline-block;
+    color: white;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn {
+    width: 100%;
+    background-color: lightblue;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: none;
+    transform: scale(0.98)
+}
+
+.container p {
+    padding: 20px 0;
+    color: white;
+}
+
+.container p a {
+    color: lightblue;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.form-controll input:focus + label span,
+.form-controll input:not([value='']) + label span {
+    transform: translateY(-30px);
+    color: lightblue;
+}
