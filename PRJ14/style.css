@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #eafbff;
+  background-image: linear-gradient(
+    to bottom,
+    #eafbff 0%,
+    #eafbff 50%,
+    #5290f9 50%,
+    #5290f9 100%
+  );
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div#nav {
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgb(106 96 96 / 50%);
+    display: flex;
+    align-items: center;
+    transition: width 0.6s ease-in;
+    width: 80px;
+    justify-content: center;
+}
+
+div.active#nav {
+    width: 365px;
+   
+}
+
+.active ul {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 0; 
+    overflow: hidden;
+}
+
+li {
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.icon {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.icon:focus {
+    outline: 0;
+  }
+  
+  .icon .line {
+    background-color: #5290f9;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+  }
+
+  .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+
+  .active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+
+  .active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+  
